@@ -19,9 +19,6 @@
   <body>
 
     <section class="preview">
-
-
-
     </section>
 
   </body>
@@ -31,6 +28,11 @@
 
     // Add your code here
 
+    for (const veggies of myArray) {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${veggies}`;
+      list.appendChild(listItem);      
+    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
