@@ -13,15 +13,12 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
   </head>
 
   <body>
 
     <section class="preview">
-        <label for="search">Search by contact name: </label>
-        <input id="search" type="text" />
-        <button>Search</button>
+        
 
 <p></p>
 
@@ -31,7 +28,7 @@
 
   </body>
   <script>
-    const name = 'Mustafa';
+    const name = 'ChGenris';
     const para = document.createElement('p');
 
     const phonebook = [
@@ -47,32 +44,15 @@
 
     // Add your code here
 
-
-// Need a input so the program can search the data
-// prob need a input box and a button for that^
-
-
-
-//input box
-// listen action for click in the button
-// 
-
-// once search has concluded, show data and exit the loop so it can restart 
-// if other inputt is inserted
-
-// for ( i = 0; i === input; i++) {
-  // if (input === data) {
-  // print "result search is ${person}"
-  // break;
-  //}
-  // else {
-  // "there is no `${input}` in the data base"  
-  //}
-//}
-
-
-
-// more specifically need to show the name and number.
+    for (const search of phonebook){
+      if (search.name === name) {
+        para.textContent = `${search.name} ${search.number}`;
+        break;
+      }
+      else {
+        para.textContent = "there is no number associated at that name"
+      }
+    }
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
