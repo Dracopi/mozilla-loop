@@ -60,7 +60,13 @@
     //   }
     // }
 
-    
+    for (const prime of i){
+      if (isPrime(i) === true){
+        para.textContent += `${prime}, `;
+      }
+    }
+
+
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
