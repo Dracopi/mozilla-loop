@@ -28,7 +28,7 @@
 
   </body>
   <script>
-    const name = 'ChGenris';
+    const name = 'Chris';
     const para = document.createElement('p');
 
     const phonebook = [
@@ -43,16 +43,29 @@
     ]
 
     // Add your code here
+// for ... of ... loop
+    // for (const search of phonebook){
+    //   if (search.name === name) {
+    //     para.textContent = `${search.name} ${search.number}`;
+    //     break;
+    //   }
+    //   else {
+    //     para.textContent = "there is no number associated at that name"
+    //   }
+    // }
 
-    for (const search of phonebook){
-      if (search.name === name) {
-        para.textContent = `${search.name} ${search.number}`;
-        break;
-      }
-      else {
-        para.textContent = "there is no number associated at that name"
-      }
-    }
+// while loop
+
+let i = 0;
+
+while (i < phonebook.length){
+if (phonebook[i].name === name){
+  para.textContent = `${phonebook[i].name} ${phonebook[i].number}`;
+  break;
+}
+  i++;
+}
+  
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
