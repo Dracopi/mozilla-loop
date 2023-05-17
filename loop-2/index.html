@@ -56,16 +56,21 @@
 
 // while loop
 
-let i = 0;
-
-while (i < phonebook.length){
-if (phonebook[i].name === name){
-  para.textContent = `${phonebook[i].name} ${phonebook[i].number}`;
-  break;
-}
-  i++;
-}
+    // let i = 0;
+    // while (i < phonebook.length){
+    // if (phonebook[i].name === name){
+    //   para.textContent = `${phonebook[i].name} ${phonebook[i].number}`;
+    //   break;
+    // }
+    //   i++;
+    // }
   
+// for loop
+for (i = 0; i < phonebook.length; i++) {
+  if (phonebook[i].name === name){
+    para.textContent = `${phonebook[i].name} ${phonebook[i].number}`
+  }
+}
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
